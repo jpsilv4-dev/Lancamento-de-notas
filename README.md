@@ -1,59 +1,63 @@
-📘 LancamentoNotas
-Este projeto em TypeScript permite o lançamento de quatro notas escolares e calcula a média final do aluno, informando se ele foi aprovado ou reprovado com base na média.
+# LancamentoNotas
 
-🚀 Funcionalidades
-Entrada interativa de notas via terminal
+Um simples programa em **TypeScript** para lançamento de notas e cálculo de média, informando se o aluno está aprovado ou reprovado.
 
-Cálculo automático da média
+## Tecnologias utilizadas
 
-Verificação de aprovação (média ≥ 60)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Node.js](https://nodejs.org/)
+- [prompt-sync](https://www.npmjs.com/package/prompt-sync) (para entrada de dados via terminal)
 
-Menu simples e intuitivo
+## Estrutura do projeto
 
-🛠️ Tecnologias Utilizadas
-TypeScript
-
-Node.js
-
-prompt-sync
-
-📦 Estrutura do Projeto
-Código
 LancamentoNotas/
-├── lancamento.ts         # Classe principal com lógica de avaliação
-├── main.ts               # Interface de menu e entrada de dados
-├── package.json          # Metadados e dependências do projeto
-├── package-lock.json     # Controle de versões das dependências
-├── tsconfig.json         # Configuração do compilador TypeScript
-└── node_modules/         # Dependências instaladas
-📄 Como Executar
+│
+├─ lancamento.ts # Classe Lancamento com métodos de avaliação
+├─ main.ts # Arquivo principal com menu interativo
+├─ package.json # Dependências do projeto
+├─ tsconfig.json # Configuração do TypeScript
+├─ README.md # Este arquivo
+└─ node_modules/ # Pacotes instalados
+
+bash
+Copiar código
+
+## Como executar
+
+bash
+Copiar código
+cd LancamentoNotas
 Instale as dependências:
 
+bash
+Copiar código
 npm init -y
 npm i -g typescript --save
 npm i ts-node --save
-
 npm i @types/prompt-sync
-
+npm install prompt-sync
 Compile o TypeScript:
 
+bash
+Copiar código
 npx tsc
+Execute o programa:
 
-Rode o programa:
+bash
+Copiar código
+node main.js
+Funcionalidades
+Menu interativo via terminal
 
-npx tsx main.ts
+Lançamento de até 4 notas por aluno
 
-🧠 Classe Lancamento
-A classe Lancamento representa um conjunto de notas e possui métodos para:
+Cálculo automático da média
 
-Definir e obter cada nota individualmente
+Indicação de aprovação ou reprovação (média ≥ 60 é aprovado)
 
-Calcular a média das quatro notas
-
-Exibir no console se o aluno foi aprovado ou reprovado
-
-📋 Exemplo de Uso
-
+Exemplo de uso
+yaml
+Copiar código
 =========Menu=========
 1. Lançar Notas
 9. Sair
@@ -63,3 +67,5 @@ Digite a segunda nota: 65
 Digite a terceira nota: 80
 Digite a quarta nota: 75
 Aprovado
+Licença
+Este projeto está licenciado sob a MIT License.
