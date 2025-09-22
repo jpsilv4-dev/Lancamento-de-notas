@@ -29,17 +29,19 @@ LancamentoNotas/
 📄 Como Executar
 Instale as dependências:
 
-bash
-npm install
+npm init -y
+npm i -g typescript --save
+npm i ts-node --save
+
+npm i @types/prompt-sync
+
 Compile o TypeScript:
 
-bash
 npx tsc
-Execute o projeto:
 
-bash
-node dist/main.js
-Certifique-se de que o diretório de saída esteja configurado corretamente no tsconfig.json (ex: "outDir": "./dist").
+Rode o programa:
+
+npx tsx main.ts
 
 🧠 Classe Lancamento
 A classe Lancamento representa um conjunto de notas e possui métodos para:
@@ -51,7 +53,7 @@ Calcular a média das quatro notas
 Exibir no console se o aluno foi aprovado ou reprovado
 
 📋 Exemplo de Uso
-bash
+
 =========Menu=========
 1. Lançar Notas
 9. Sair
@@ -61,6 +63,3 @@ Digite a segunda nota: 65
 Digite a terceira nota: 80
 Digite a quarta nota: 75
 Aprovado
-
-📚 Licença
-Este projeto está sob a licença MIT. Sinta-se livre para usar, modificar e compartilhar.
